@@ -1,0 +1,79 @@
+DigiYatraCasestudy
+
+Project Overview
+
+DigiYatra
+
+App Redesign
+
+DigiYatra is a paperless airport experience used by
+millions across India. The current home screen hides
+the most essential travel detail - flight time - forcing
+travelers to dig through email or WhatsApp. This
+redesign rebuilds the boarding-pass surface around
+glanceability, hierarchy, and calm, confident
+composition.
+
+The Spark                                                                 What users actually
+                                                                          struggle with.
+A real complaint from a
+real user.                                                                1 Flight timing not visible
+                                                                                The most important data point
+A LinkedIn post from a frequent traveler captured the exact friction the        boarding/departure time is buried or
+product was meant to remove published months after the app's                    missing from the home view.
+national rollout.
+                                                                          2 Forced context-switching
+
+                                                                                Users open WhatsApp, Gmail or a
+                                                                                paper copy to find the time they
+                                                                                expected the app to surface.
+
+                                                                          3 Important info hard to access
+
+                                                                                Seat, Gate, NP R and Flight number
+                                                                                are listed without hierarch everything
+                                                                                looks equally unimportant.
+
+Design Goal
+Before opening Figma, we agreed on a small, opinionated set of
+goals. Each design decision had to defend itself against this list.
+
+Goal 01                                                                   Goal 02
+
+Improve glanceability                                                     Surface critical info
+                                                                          instantly
+Critical info readable in under
+one second the time it takes                                              Time, route and gate
+to glance at a wristwatch.                                                above the fold. No taps,
+                                                                          no scrolls, no guesswork.
+
+North Star "Show me my flight in one glance."
+
+Single screen redesign. No new flows, no                                  Constraint
+       engineering scope creep.
+
+S u c c e s s 
+                      Time-to-find boarding time reduced from
+Metric                                           ~6s to under 1s.
+
+Final Design                                                                 Dark Surface
+
+   Route visibility                                                       Deep navy reduces glare under
+                                                                          harsh airport lighting.
+BLR  BOM rendered as hero
+typography. The first thing the eye                                          QR Accessibility
+lands on.
+                                                                          Boarding QR sits on the pass one
+   Boarding Details                                                       tap less between traveler and gate.
+
+Boarding · Gate · Zone · Seat in a
+single, scannable strip.
+
+Before Current                                                            After Redesign
+
+"Good UX is about making
+important information instantly
+accessible. "
+
+                       Thanks for reading
+

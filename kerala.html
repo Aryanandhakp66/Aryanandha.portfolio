@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryanandha - Kerala Edition</title>
+  <meta name="description" content="Aryanandha - Designer who codes, developer who designs. A Kerala-themed editorial portfolio." />
+  <meta name="theme-color" content="#F6F1E6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="kerala.css" />
+</head>
+<body>
+
+  <!-- ============================ DECOR: BANANA LEAVES (page-wide) ============================ -->
+  <svg class="leaf leaf--tl" viewBox="0 0 320 480" aria-hidden="true">
+    <defs>
+      <linearGradient id="leafG1" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#3F6B3A"/>
+        <stop offset="100%" stop-color="#1F3B2D"/>
+      </linearGradient>
+    </defs>
+    <path d="M10 460 C 40 300, 120 160, 300 20 C 280 180, 200 360, 60 470 Z" fill="url(#leafG1)"/>
+    <path d="M30 450 C 80 320, 160 200, 290 40" stroke="#1F3B2D" stroke-width="1.2" fill="none"/>
+    <g stroke="#2A4A33" stroke-width="0.8" opacity="0.6" fill="none">
+      <path d="M60 430 Q 100 380, 200 320"/>
+      <path d="M90 420 Q 130 360, 230 280"/>
+      <path d="M120 400 Q 160 340, 250 240"/>
+      <path d="M150 380 Q 190 320, 270 200"/>
+      <path d="M50 460 Q 90 410, 180 360"/>
+    </g>
+  </svg>
+
+  <svg class="leaf leaf--tr" viewBox="0 0 320 480" aria-hidden="true">
+    <use href="#" />
+    <defs>
+      <linearGradient id="leafG2" x1="1" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#4A7B40"/>
+        <stop offset="100%" stop-color="#284733"/>
+      </linearGradient>
+    </defs>
+    <path d="M310 460 C 280 300, 200 160, 20 20 C 40 180, 120 360, 260 470 Z" fill="url(#leafG2)"/>
+    <path d="M290 450 C 240 320, 160 200, 30 40" stroke="#1F3B2D" stroke-width="1.2" fill="none"/>
+    <g stroke="#2A4A33" stroke-width="0.8" opacity="0.6" fill="none">
+      <path d="M260 430 Q 220 380, 120 320"/>
+      <path d="M230 420 Q 190 360, 90 280"/>
+      <path d="M200 400 Q 160 340, 70 240"/>
+      <path d="M170 380 Q 130 320, 50 200"/>
+    </g>
+  </svg>
+
+  <svg class="leaf leaf--bl" viewBox="0 0 320 480" aria-hidden="true">
+    <defs>
+      <linearGradient id="leafG3" x1="0" x2="1" y1="1" y2="0">
+        <stop offset="0%" stop-color="#3F6B3A"/>
+        <stop offset="100%" stop-color="#1F3B2D"/>
+      </linearGradient>
+    </defs>
+    <path d="M10 20 C 40 180, 120 320, 300 460 C 280 300, 200 120, 60 10 Z" fill="url(#leafG3)"/>
+    <path d="M30 30 C 80 160, 160 280, 290 440" stroke="#1F3B2D" stroke-width="1.2" fill="none"/>
+    <g stroke="#2A4A33" stroke-width="0.8" opacity="0.55" fill="none">
+      <path d="M60 50 Q 100 100, 200 160"/>
+      <path d="M90 60 Q 130 120, 230 200"/>
+      <path d="M120 80 Q 160 140, 250 240"/>
+    </g>
+  </svg>
+
+  <svg class="leaf leaf--br" viewBox="0 0 320 480" aria-hidden="true">
+    <defs>
+      <linearGradient id="leafG4" x1="1" x2="0" y1="1" y2="0">
+        <stop offset="0%" stop-color="#4A7B40"/>
+        <stop offset="100%" stop-color="#284733"/>
+      </linearGradient>
+    </defs>
+    <path d="M310 20 C 280 180, 200 320, 20 460 C 40 300, 120 120, 260 10 Z" fill="url(#leafG4)"/>
+    <path d="M290 30 C 240 160, 160 280, 30 440" stroke="#1F3B2D" stroke-width="1.2" fill="none"/>
+    <g stroke="#2A4A33" stroke-width="0.8" opacity="0.55" fill="none">
+      <path d="M260 50 Q 220 100, 120 160"/>
+      <path d="M230 60 Q 190 120, 90 200"/>
+      <path d="M200 80 Q 160 140, 70 240"/>
+    </g>
+  </svg>
+
+  <!-- ============================ NAV ============================ -->
+  <nav class="k-nav">
+    <a href="#home" class="k-nav__brand">
+      <span class="k-nav__brand-mark">A</span>
+      <span class="k-nav__brand-name">Aryanandha</span>
+    </a>
+
+    <ul class="k-nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="https://drive.google.com/file/d/1Gx09ZeltvKSBruHtq61AyufzrmKYx_Gb/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#home" class="k-nav__avatar" aria-label="Profile photo">
+      <img src="resume_image.jpeg" alt="Aryanandha" />
+    </a>
+  </nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header class="k-hero" id="home">
+    <!-- pookalam ornament behind name -->
+    <svg class="k-pookalam" viewBox="0 0 600 600" aria-hidden="true">
+      <g fill="none" stroke="#C2A05C" stroke-width="0.8" opacity="0.55">
+        <circle cx="300" cy="300" r="40"/>
+        <circle cx="300" cy="300" r="80"/>
+        <circle cx="300" cy="300" r="120"/>
+        <circle cx="300" cy="300" r="170"/>
+        <circle cx="300" cy="300" r="220"/>
+        <circle cx="300" cy="300" r="270"/>
+      </g>
+      <g fill="#B6432A" opacity="0.55">
+        <circle cx="300" cy="60"  r="6"/>
+        <circle cx="300" cy="540" r="6"/>
+        <circle cx="60"  cy="300" r="6"/>
+        <circle cx="540" cy="300" r="6"/>
+        <circle cx="130" cy="130" r="5"/>
+        <circle cx="470" cy="130" r="5"/>
+        <circle cx="130" cy="470" r="5"/>
+        <circle cx="470" cy="470" r="5"/>
+      </g>
+      <g fill="#C2A05C" opacity="0.7">
+        <circle cx="300" cy="120" r="3"/>
+        <circle cx="300" cy="480" r="3"/>
+        <circle cx="120" cy="300" r="3"/>
+        <circle cx="480" cy="300" r="3"/>
+      </g>
+      <g stroke="#4A7B40" stroke-width="1" fill="none" opacity="0.55">
+        <path d="M300 80 L300 60 M300 540 L300 520 M80 300 L60 300 M540 300 L520 300"/>
+      </g>
+    </svg>
+
+    <!-- floating Kerala motifs -->
+    <div class="k-motifs" aria-hidden="true">
+      <span class="k-motif k-motif--lamp">
+        <!-- nilavilakku (brass oil lamp) -->
+        <svg viewBox="0 0 64 96" fill="none" stroke="#C2A05C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10 Q32 0 42 10 L40 16 Q32 12 24 16 Z" fill="#E8B85F" stroke="none"/>
+          <path d="M32 4 Q35 10 32 16 Q29 10 32 4Z" fill="#F4D77A" stroke="none"/>
+          <path d="M14 22 Q32 16 50 22 L46 32 Q32 26 18 32 Z"/>
+          <line x1="32" y1="32" x2="32" y2="62"/>
+          <ellipse cx="32" cy="64" rx="14" ry="4"/>
+          <ellipse cx="32" cy="76" rx="22" ry="6"/>
+          <ellipse cx="32" cy="86" rx="26" ry="6"/>
+        </svg>
+      </span>
+      <span class="k-motif k-motif--boat">
+        <!-- snake-boat (vallam) -->
+        <svg viewBox="0 0 200 64" fill="none" stroke="#1F3B2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 44 Q 16 28 30 24 L 170 24 Q 184 28 196 44 Q 100 60 4 44 Z" fill="#1F3B2D" opacity="0.85"/>
+          <path d="M30 18 Q 28 4 18 6 M170 18 Q 172 4 182 6" stroke="#1F3B2D" fill="none"/>
+          <g stroke="#C2A05C" stroke-width="1" opacity="0.9">
+            <line x1="40" y1="22"  x2="36" y2="6"/>
+            <line x1="60" y1="22"  x2="56" y2="6"/>
+            <line x1="80" y1="22"  x2="76" y2="6"/>
+            <line x1="100" y1="22" x2="96" y2="6"/>
+            <line x1="120" y1="22" x2="116" y2="6"/>
+            <line x1="140" y1="22" x2="136" y2="6"/>
+            <line x1="160" y1="22" x2="156" y2="6"/>
+          </g>
+        </svg>
+      </span>
+      <span class="k-motif k-motif--eye">
+        <!-- kathakali eye -->
+        <svg viewBox="0 0 80 40" fill="none" stroke="#B6432A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 20 Q 40 -10 76 20 Q 40 50 4 20 Z" fill="#FFFBE8"/>
+          <circle cx="40" cy="20" r="9" fill="#1F3B2D"/>
+          <circle cx="40" cy="20" r="4" fill="#FFFBE8"/>
+          <path d="M4 20 Q 40 -8 76 20" stroke="#1F3B2D" stroke-width="1.2"/>
+        </svg>
+      </span>
+      <span class="k-motif k-motif--coconut">
+        <!-- coconut palm frond -->
+        <svg viewBox="0 0 120 120" fill="none" stroke="#1F3B2D" stroke-width="1.4" stroke-linecap="round">
+          <path d="M60 110 Q 56 70 50 30" />
+          <g stroke="#3F6B3A">
+            <path d="M52 70 Q 30 60 14 48"/>
+            <path d="M52 60 Q 30 48 12 30"/>
+            <path d="M52 50 Q 32 36 22 16"/>
+            <path d="M54 80 Q 32 80 14 76"/>
+            <path d="M58 70 Q 80 60 96 48"/>
+            <path d="M58 60 Q 80 48 100 30"/>
+            <path d="M58 50 Q 80 36 92 16"/>
+            <path d="M56 80 Q 80 80 100 76"/>
+          </g>
+        </svg>
+      </span>
+    </div>
+
+    <div class="k-hero__inner">
+      <div class="k-kasavu">
+        <div class="k-kasavu__line"></div>
+        <p class="k-hero__intro">
+          <span class="k-dot"></span>
+          <span>PORTFOLIO OF</span>
+          <span class="k-dot"></span>
+        </p>
+        <div class="k-kasavu__line"></div>
+      </div>
+
+      <h1 class="k-hero__title">
+        <span class="k-hero__title-text">Aryanandha</span>
+      </h1>
+
+      <p class="k-hero__sub">
+        <span class="k-quote">“</span>
+        Designer who codes, developer who designs - crafting clean,
+        thoughtful, and user-focused digital experiences with creativity
+        and precision.
+        <span class="k-quote k-quote--end">”</span>
+      </p>
+
+      <div class="k-hero__cta">
+        <a href="https://drive.google.com/file/d/1Gx09ZeltvKSBruHtq61AyufzrmKYx_Gb/view?usp=sharing" target="_blank" rel="noopener" class="k-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <path d="M14 2v6h6M9 13h6M9 17h6"/>
+          </svg>
+          View Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- decorative bottom strip with lamps -->
+    <div class="k-hero__strip" aria-hidden="true">
+      <span class="k-hero__strip-rule"></span>
+      <span class="k-hero__strip-lamp">
+        <svg viewBox="0 0 64 96" width="22" height="34" fill="none" stroke="#C2A05C" stroke-width="1.5">
+          <path d="M32 4 Q35 10 32 16 Q29 10 32 4Z" fill="#F4D77A" stroke="none"/>
+          <path d="M14 22 Q32 16 50 22 L46 32 Q32 26 18 32 Z"/>
+          <line x1="32" y1="32" x2="32" y2="62"/>
+          <ellipse cx="32" cy="64" rx="14" ry="4"/>
+          <ellipse cx="32" cy="76" rx="22" ry="6"/>
+          <ellipse cx="32" cy="86" rx="26" ry="6"/>
+        </svg>
+      </span>
+      <span class="k-hero__strip-rule"></span>
+    </div>
+
+    <!-- ============================ BIRDS (top of hero) ============================ -->
+    <div class="k-birds" aria-hidden="true">
+      <svg class="k-bird k-bird--1" viewBox="0 0 40 20" fill="none" stroke="#1F3B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12 Q 10 2 20 12 Q 30 2 38 12"/>
+      </svg>
+      <svg class="k-bird k-bird--2" viewBox="0 0 40 20" fill="none" stroke="#1F3B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12 Q 10 2 20 12 Q 30 2 38 12"/>
+      </svg>
+      <svg class="k-bird k-bird--3" viewBox="0 0 40 20" fill="none" stroke="#1F3B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12 Q 10 2 20 12 Q 30 2 38 12"/>
+      </svg>
+      <svg class="k-bird k-bird--4" viewBox="0 0 40 20" fill="none" stroke="#1F3B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12 Q 10 2 20 12 Q 30 2 38 12"/>
+      </svg>
+      <svg class="k-bird k-bird--5" viewBox="0 0 40 20" fill="none" stroke="#1F3B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12 Q 10 2 20 12 Q 30 2 38 12"/>
+      </svg>
+    </div>
+
+    <!-- ============================ SCENERY (bottom of hero) ============================ -->
+    <div class="k-scenery" aria-hidden="true">
+      <!-- left coconut tree -->
+      <svg class="k-tree k-tree--left" viewBox="0 0 160 320">
+        <!-- trunk -->
+        <path d="M82 320 Q 70 220 80 140 Q 90 80 78 30" stroke="#5C3A1F" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <!-- trunk rings -->
+        <g stroke="#3F2614" stroke-width="1.2" opacity="0.7" fill="none">
+          <path d="M70 280 Q 80 282 90 280"/>
+          <path d="M68 240 Q 80 242 92 240"/>
+          <path d="M72 200 Q 82 202 92 200"/>
+          <path d="M76 160 Q 84 162 92 160"/>
+          <path d="M80 110 Q 86 112 92 110"/>
+        </g>
+        <!-- coconuts at crown -->
+        <g fill="#3F2614">
+          <circle cx="72" cy="32" r="5"/>
+          <circle cx="84" cy="34" r="5"/>
+          <circle cx="78" cy="42" r="4.5"/>
+        </g>
+        <!-- fronds -->
+        <g class="k-fronds" style="transform-origin: 78px 30px;">
+          <g class="k-frond k-frond--a"><path d="M78 30 Q 40 0 4 10 Q 30 20 60 28" fill="#1F3B2D" stroke="#1F3B2D" stroke-width="1"/></g>
+          <g class="k-frond k-frond--b"><path d="M78 30 Q 110 -2 156 8 Q 124 22 92 28" fill="#3F6B3A" stroke="#3F6B3A" stroke-width="1"/></g>
+          <g class="k-frond k-frond--c"><path d="M78 30 Q 30 30 0 40 Q 30 46 64 38" fill="#284733" stroke="#284733" stroke-width="1"/></g>
+          <g class="k-frond k-frond--d"><path d="M78 30 Q 124 28 158 38 Q 124 46 92 38" fill="#3F6B3A" stroke="#3F6B3A" stroke-width="1"/></g>
+          <g class="k-frond k-frond--e"><path d="M78 30 Q 60 0 50 -12 Q 70 10 76 28" fill="#1F3B2D" stroke="#1F3B2D" stroke-width="1"/></g>
+          <g class="k-frond k-frond--f"><path d="M78 30 Q 96 0 108 -12 Q 88 10 82 28" fill="#3F6B3A" stroke="#3F6B3A" stroke-width="1"/></g>
+        </g>
+      </svg>
+
+      <!-- left banana plant -->
+      <svg class="k-banana k-banana--left" viewBox="0 0 140 220">
+        <!-- pseudostem -->
+        <path d="M68 220 L 68 90" stroke="#6E8E5B" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <path d="M68 220 L 68 90" stroke="#4A6B3A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <!-- leaves -->
+        <g class="k-banana__leaves" style="transform-origin: 68px 90px;">
+          <g class="k-banana__leaf k-banana__leaf--1">
+            <path d="M68 90 Q 20 70 0 30 Q 30 75 65 92 Z" fill="#3F6B3A"/>
+            <path d="M68 90 Q 36 78 16 56" stroke="#1F3B2D" stroke-width="1" fill="none" opacity="0.6"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--2">
+            <path d="M68 90 Q 116 70 138 28 Q 108 76 70 92 Z" fill="#4A7B40"/>
+            <path d="M68 90 Q 100 78 122 54" stroke="#1F3B2D" stroke-width="1" fill="none" opacity="0.6"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--3">
+            <path d="M68 92 Q 18 100 -6 80 Q 28 110 66 96 Z" fill="#284733"/>
+            <path d="M68 92 Q 36 96 12 88" stroke="#1F3B2D" stroke-width="1" fill="none" opacity="0.5"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--4">
+            <path d="M68 92 Q 118 100 144 82 Q 110 110 70 96 Z" fill="#3F6B3A"/>
+            <path d="M68 92 Q 102 96 124 88" stroke="#1F3B2D" stroke-width="1" fill="none" opacity="0.5"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--5">
+            <path d="M68 90 Q 56 50 50 16 Q 70 50 72 88 Z" fill="#1F3B2D"/>
+          </g>
+        </g>
+        <!-- banana bunch -->
+        <g class="k-banana__bunch">
+          <path d="M62 96 Q 60 110 64 118 Q 60 124 66 130 Q 60 138 68 144" stroke="#C2A05C" stroke-width="3" fill="none"/>
+          <path d="M70 96 Q 72 110 70 122 Q 76 128 72 138" stroke="#D7B872" stroke-width="3" fill="none"/>
+          <path d="M74 98 Q 80 110 76 124" stroke="#C2A05C" stroke-width="3" fill="none"/>
+        </g>
+      </svg>
+
+      <!-- right banana plant -->
+      <svg class="k-banana k-banana--right" viewBox="0 0 140 220">
+        <path d="M72 220 L 72 90" stroke="#6E8E5B" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <path d="M72 220 L 72 90" stroke="#4A6B3A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <g class="k-banana__leaves" style="transform-origin: 72px 90px;">
+          <g class="k-banana__leaf k-banana__leaf--1">
+            <path d="M72 90 Q 20 70 0 30 Q 30 75 70 92 Z" fill="#4A7B40"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--2">
+            <path d="M72 90 Q 116 70 138 28 Q 108 76 74 92 Z" fill="#3F6B3A"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--3">
+            <path d="M72 92 Q 18 100 -6 80 Q 28 110 70 96 Z" fill="#284733"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--4">
+            <path d="M72 92 Q 118 100 144 82 Q 110 110 74 96 Z" fill="#4A7B40"/>
+          </g>
+          <g class="k-banana__leaf k-banana__leaf--5">
+            <path d="M72 90 Q 84 50 90 16 Q 70 50 70 88 Z" fill="#1F3B2D"/>
+          </g>
+        </g>
+        <g class="k-banana__bunch">
+          <path d="M66 96 Q 64 112 68 122 Q 64 130 70 138" stroke="#D7B872" stroke-width="3" fill="none"/>
+          <path d="M74 98 Q 78 110 74 122 Q 80 130 76 140" stroke="#C2A05C" stroke-width="3" fill="none"/>
+        </g>
+      </svg>
+
+      <!-- right coconut tree -->
+      <svg class="k-tree k-tree--right" viewBox="0 0 160 320">
+        <path d="M78 320 Q 90 220 80 140 Q 70 80 82 30" stroke="#5C3A1F" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <g stroke="#3F2614" stroke-width="1.2" opacity="0.7" fill="none">
+          <path d="M90 280 Q 80 282 70 280"/>
+          <path d="M92 240 Q 80 242 68 240"/>
+          <path d="M88 200 Q 78 202 68 200"/>
+          <path d="M84 160 Q 76 162 68 160"/>
+          <path d="M80 110 Q 74 112 68 110"/>
+        </g>
+        <g fill="#3F2614">
+          <circle cx="76" cy="34" r="5"/>
+          <circle cx="88" cy="32" r="5"/>
+          <circle cx="82" cy="42" r="4.5"/>
+        </g>
+        <g class="k-fronds" style="transform-origin: 82px 30px;">
+          <g class="k-frond k-frond--a"><path d="M82 30 Q 44 0 8 10 Q 34 20 64 28" fill="#3F6B3A" stroke="#3F6B3A" stroke-width="1"/></g>
+          <g class="k-frond k-frond--b"><path d="M82 30 Q 114 -2 158 8 Q 126 22 96 28" fill="#1F3B2D" stroke="#1F3B2D" stroke-width="1"/></g>
+          <g class="k-frond k-frond--c"><path d="M82 30 Q 34 30 4 40 Q 34 46 68 38" fill="#284733" stroke="#284733" stroke-width="1"/></g>
+          <g class="k-frond k-frond--d"><path d="M82 30 Q 128 28 160 38 Q 128 46 96 38" fill="#3F6B3A" stroke="#3F6B3A" stroke-width="1"/></g>
+          <g class="k-frond k-frond--e"><path d="M82 30 Q 64 0 54 -12 Q 74 10 80 28" fill="#1F3B2D" stroke="#1F3B2D" stroke-width="1"/></g>
+          <g class="k-frond k-frond--f"><path d="M82 30 Q 100 0 112 -12 Q 92 10 86 28" fill="#3F6B3A" stroke="#3F6B3A" stroke-width="1"/></g>
+        </g>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ============================ KATHAKALI BANNER ============================ -->
+  <section class="k-kathakali">
+    <div class="k-container">
+
+      <!-- ribbon banner heading -->
+      <div class="k-ribbon" aria-hidden="false">
+        <span class="k-ribbon__tail k-ribbon__tail--l"></span>
+        <span class="k-ribbon__band">
+          <span class="k-ribbon__text">A TRADITION OF CRAFT</span>
+        </span>
+        <span class="k-ribbon__tail k-ribbon__tail--r"></span>
+      </div>
+
+      <!-- three kathakali masks -->
+      <div class="k-masks">
+        <!-- MASK 1 - Pacha (green, hero) -->
+        <div class="k-mask k-mask--pacha">
+          <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+            <!-- crown back arch -->
+            <path d="M30 110 Q 100 -30 170 110 L 170 130 Q 100 30 30 130 Z" fill="#C9352B"/>
+            <!-- crown radiating stripes -->
+            <g stroke="#F4D77A" stroke-width="3" stroke-linecap="round" fill="none">
+              <line x1="100" y1="20" x2="100" y2="55"/>
+              <line x1="80"  y1="28" x2="86"  y2="60"/>
+              <line x1="120" y1="28" x2="114" y2="60"/>
+              <line x1="60"  y1="44" x2="72"  y2="70"/>
+              <line x1="140" y1="44" x2="128" y2="70"/>
+              <line x1="44"  y1="64" x2="60"  y2="84"/>
+              <line x1="156" y1="64" x2="140" y2="84"/>
+            </g>
+            <!-- inner green crown -->
+            <path d="M44 116 Q 100 24 156 116 L 156 130 Q 100 50 44 130 Z" fill="#2F7A3E"/>
+            <!-- crown jewels -->
+            <g>
+              <circle cx="100" cy="74" r="6" fill="#F4D77A" stroke="#C9352B" stroke-width="1.5"/>
+              <circle cx="80"  cy="86" r="4" fill="#F4D77A" stroke="#C9352B" stroke-width="1"/>
+              <circle cx="120" cy="86" r="4" fill="#F4D77A" stroke="#C9352B" stroke-width="1"/>
+              <circle cx="62"  cy="106" r="4" fill="#F4D77A" stroke="#C9352B" stroke-width="1"/>
+              <circle cx="138" cy="106" r="4" fill="#F4D77A" stroke="#C9352B" stroke-width="1"/>
+            </g>
+            <!-- crown bottom band -->
+            <rect x="30" y="125" width="140" height="10" fill="#0E3E1E"/>
+            <!-- ear ornaments -->
+            <g>
+              <circle cx="24" cy="148" r="10" fill="#C9352B"/>
+              <circle cx="24" cy="148" r="5"  fill="#F4D77A"/>
+              <circle cx="176" cy="148" r="10" fill="#C9352B"/>
+              <circle cx="176" cy="148" r="5"  fill="#F4D77A"/>
+            </g>
+            <!-- face -->
+            <path d="M44 130 Q 50 200 100 210 Q 150 200 156 130 Z" fill="#4FA34B"/>
+            <!-- white chutti (cheek/jaw outline) -->
+            <path d="M44 132 Q 32 200 100 220 Q 168 200 156 132 L 152 132 Q 158 196 100 214 Q 42 196 48 132 Z" fill="#FFFDF1"/>
+            <!-- forehead red strip + bindi -->
+            <path d="M62 130 Q 100 116 138 130 L 132 140 Q 100 132 68 140 Z" fill="#C9352B"/>
+            <circle cx="100" cy="138" r="3" fill="#F4D77A"/>
+            <!-- eyebrows -->
+            <path d="M66 152 Q 78 144 92 152" stroke="#1B1A17" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M108 152 Q 122 144 134 152" stroke="#1B1A17" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- eye whites -->
+            <ellipse cx="80"  cy="162" rx="10" ry="6" fill="#FFFDF1"/>
+            <ellipse cx="120" cy="162" rx="10" ry="6" fill="#FFFDF1"/>
+            <!-- irises -->
+            <circle cx="80"  cy="162" r="3.5" fill="#1B1A17"/>
+            <circle cx="120" cy="162" r="3.5" fill="#1B1A17"/>
+            <!-- red eye liner -->
+            <path d="M70 168 Q 80 174 90 168" stroke="#C9352B" stroke-width="2" fill="none"/>
+            <path d="M110 168 Q 120 174 130 168" stroke="#C9352B" stroke-width="2" fill="none"/>
+            <!-- nose -->
+            <path d="M100 168 Q 96 184 100 188 Q 104 184 100 168" stroke="#1B1A17" stroke-width="1.5" fill="none"/>
+            <!-- lips -->
+            <path d="M82 194 Q 100 200 118 194 Q 100 204 82 194 Z" fill="#C9352B"/>
+            <line x1="82" y1="195" x2="118" y2="195" stroke="#FFFDF1" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <!-- MASK 2 - Kathi (orange villain) -->
+        <div class="k-mask k-mask--kathi">
+          <svg viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg">
+            <!-- big crown outer -->
+            <path d="M20 120 Q 110 -30 200 120 L 200 142 Q 110 30 20 142 Z" fill="#2F7A3E"/>
+            <!-- crown stripes -->
+            <g stroke="#F4D77A" stroke-width="3" stroke-linecap="round" fill="none">
+              <line x1="110" y1="14" x2="110" y2="56"/>
+              <line x1="86"  y1="22" x2="94"  y2="60"/>
+              <line x1="134" y1="22" x2="126" y2="60"/>
+              <line x1="64"  y1="38" x2="78"  y2="70"/>
+              <line x1="156" y1="38" x2="142" y2="70"/>
+              <line x1="44"  y1="60" x2="62"  y2="84"/>
+              <line x1="176" y1="60" x2="158" y2="84"/>
+            </g>
+            <!-- inner red crown -->
+            <path d="M36 124 Q 110 16 184 124 L 184 142 Q 110 44 36 142 Z" fill="#C9352B"/>
+            <!-- jewels -->
+            <g>
+              <circle cx="110" cy="74" r="6" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1.5"/>
+              <circle cx="86"  cy="92" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+              <circle cx="134" cy="92" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+              <circle cx="60"  cy="112" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+              <circle cx="160" cy="112" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+            </g>
+            <rect x="20" y="136" width="180" height="12" fill="#0E3E1E"/>
+            <!-- ear ornaments -->
+            <g>
+              <circle cx="14" cy="162" r="12" fill="#C9352B"/>
+              <circle cx="14" cy="162" r="6"  fill="#F4D77A"/>
+              <circle cx="206" cy="162" r="12" fill="#C9352B"/>
+              <circle cx="206" cy="162" r="6"  fill="#F4D77A"/>
+            </g>
+            <!-- face (orange) -->
+            <path d="M36 142 Q 42 218 110 232 Q 178 218 184 142 Z" fill="#E8732B"/>
+            <!-- white cheek bumps (chutti) -->
+            <circle cx="54" cy="180" r="9" fill="#FFFDF1"/>
+            <circle cx="166" cy="180" r="9" fill="#FFFDF1"/>
+            <!-- forehead red strip -->
+            <path d="M58 144 Q 110 128 162 144 L 156 156 Q 110 142 64 156 Z" fill="#C9352B"/>
+            <circle cx="110" cy="152" r="3" fill="#F4D77A"/>
+            <!-- eyebrows -->
+            <path d="M70 168 Q 86 160 102 168" stroke="#1B1A17" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <path d="M118 168 Q 134 160 150 168" stroke="#1B1A17" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <!-- eyes -->
+            <ellipse cx="86"  cy="180" rx="12" ry="7" fill="#FFFDF1"/>
+            <ellipse cx="134" cy="180" rx="12" ry="7" fill="#FFFDF1"/>
+            <circle cx="86"  cy="180" r="4" fill="#1B1A17"/>
+            <circle cx="134" cy="180" r="4" fill="#1B1A17"/>
+            <path d="M74 188 Q 86 196 98 188" stroke="#C9352B" stroke-width="2.2" fill="none"/>
+            <path d="M122 188 Q 134 196 146 188" stroke="#C9352B" stroke-width="2.2" fill="none"/>
+            <!-- nose -->
+            <path d="M110 188 Q 104 210 110 214 Q 116 210 110 188" stroke="#1B1A17" stroke-width="1.6" fill="none"/>
+            <!-- big white moustache -->
+            <path d="M70 214 Q 90 220 110 218 Q 130 220 150 214 Q 134 230 110 226 Q 86 230 70 214 Z" fill="#FFFDF1" stroke="#1B1A17" stroke-width="0.6"/>
+            <!-- mouth with teeth -->
+            <path d="M86 222 Q 110 234 134 222 L 134 224 Q 110 232 86 224 Z" fill="#1B1A17"/>
+            <g fill="#FFFDF1">
+              <rect x="92" y="222" width="3" height="4"/>
+              <rect x="98" y="222" width="3" height="4"/>
+              <rect x="104" y="222" width="3" height="4"/>
+              <rect x="113" y="222" width="3" height="4"/>
+              <rect x="119" y="222" width="3" height="4"/>
+              <rect x="125" y="222" width="3" height="4"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- MASK 3 - Thaadi (bearded) -->
+        <div class="k-mask k-mask--thaadi">
+          <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+            <!-- crown outer red -->
+            <path d="M28 110 Q 100 -30 172 110 L 172 132 Q 100 30 28 132 Z" fill="#C9352B"/>
+            <g stroke="#F4D77A" stroke-width="3" stroke-linecap="round" fill="none">
+              <line x1="100" y1="18" x2="100" y2="54"/>
+              <line x1="80"  y1="26" x2="86"  y2="60"/>
+              <line x1="120" y1="26" x2="114" y2="60"/>
+              <line x1="58"  y1="44" x2="72"  y2="70"/>
+              <line x1="142" y1="44" x2="128" y2="70"/>
+              <line x1="40"  y1="64" x2="58"  y2="84"/>
+              <line x1="160" y1="64" x2="142" y2="84"/>
+            </g>
+            <!-- inner green -->
+            <path d="M42 116 Q 100 22 158 116 L 158 132 Q 100 48 42 132 Z" fill="#2F7A3E"/>
+            <g>
+              <circle cx="100" cy="72" r="6" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1.5"/>
+              <circle cx="78"  cy="88" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+              <circle cx="122" cy="88" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+              <circle cx="58"  cy="108" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+              <circle cx="142" cy="108" r="4" fill="#F4D77A" stroke="#0E3E1E" stroke-width="1"/>
+            </g>
+            <rect x="28" y="128" width="144" height="10" fill="#0E3E1E"/>
+            <!-- ear ornaments -->
+            <g>
+              <circle cx="22" cy="156" r="10" fill="#2F7A3E"/>
+              <circle cx="22" cy="156" r="5"  fill="#F4D77A"/>
+              <circle cx="178" cy="156" r="10" fill="#2F7A3E"/>
+              <circle cx="178" cy="156" r="5"  fill="#F4D77A"/>
+            </g>
+            <!-- face (brown/tan) -->
+            <path d="M42 138 Q 48 200 100 212 Q 152 200 158 138 Z" fill="#A86B38"/>
+            <!-- forehead red strip -->
+            <path d="M60 138 Q 100 122 140 138 L 134 150 Q 100 138 66 150 Z" fill="#C9352B"/>
+            <circle cx="100" cy="146" r="3" fill="#F4D77A"/>
+            <!-- eyebrows -->
+            <path d="M66 162 Q 80 154 94 162" stroke="#1B1A17" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M106 162 Q 120 154 134 162" stroke="#1B1A17" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- eyes -->
+            <ellipse cx="80"  cy="172" rx="9" ry="5.5" fill="#FFFDF1"/>
+            <ellipse cx="120" cy="172" rx="9" ry="5.5" fill="#FFFDF1"/>
+            <circle cx="80"  cy="172" r="3.2" fill="#1B1A17"/>
+            <circle cx="120" cy="172" r="3.2" fill="#1B1A17"/>
+            <!-- nose -->
+            <path d="M100 178 Q 96 192 100 196 Q 104 192 100 178" stroke="#1B1A17" stroke-width="1.5" fill="none"/>
+            <!-- lips -->
+            <path d="M86 202 Q 100 208 114 202" stroke="#C9352B" stroke-width="3" fill="none"/>
+            <!-- big white beard -->
+            <path d="M58 200 Q 50 250 100 252 Q 150 250 142 200 Q 130 224 100 222 Q 70 224 58 200 Z" fill="#FFFDF1" stroke="#C9352B" stroke-width="0.8"/>
+            <g stroke="#E8E2D0" stroke-width="0.8" fill="none" opacity="0.7">
+              <path d="M70 214 Q 76 230 82 244"/>
+              <path d="M86 218 Q 90 234 94 250"/>
+              <path d="M114 218 Q 110 234 106 250"/>
+              <path d="M130 214 Q 124 230 118 244"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- scroll-style subtitle -->
+      <div class="k-scroll">
+        <span class="k-scroll__edge k-scroll__edge--l"></span>
+        <p class="k-scroll__text">
+          A quiet bow to the colours, masks &amp; rituals of <em>God's Own Country</em>.
+        </p>
+        <span class="k-scroll__edge k-scroll__edge--r"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WORK ============================ -->
+  <section class="k-section" id="work">
+    <div class="k-container">
+      <header class="k-head">
+        <span class="k-kicker">~ Selected work · 01</span>
+        <h2 class="k-title">A single, considered <em>case study.</em></h2>
+        <p class="k-lede">
+          One project, told slowly. The kind of work that asks for
+          patience and rewards a careful read.
+        </p>
+      </header>
+
+      <a href="case-study.html" class="k-feature">
+        <span class="k-feature__chip">
+          <span class="k-feature__chip-dot"></span>
+          Featured · Case study
+        </span>
+
+        <div class="k-feature__cover">
+          <img src="coverpage.png" alt="DigiYatra redesign cover" />
+          <span class="k-feature__year">2025</span>
+        </div>
+
+        <div class="k-feature__meta">
+          <div class="k-feature__row">
+            <span class="k-feature__num">01 / 01</span>
+            <span class="k-feature__tag">UI/UX · Mobile</span>
+          </div>
+          <h3 class="k-feature__title">DigiYatra, <em>Reimagined.</em></h3>
+          <p class="k-feature__desc">
+            A research-led redesign of India's facial-recognition
+            airport boarding flow - built around glanceability and
+            the calm of knowing exactly when your flight leaves.
+          </p>
+
+          <ul class="k-feature__chips">
+            <li>Glanceability</li>
+            <li>Hierarchy</li>
+            <li>Calm UI</li>
+          </ul>
+
+          <span class="k-feature__cta">
+            View case study
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================ DIVIDER: nilavilakku ============================ -->
+  <div class="k-divider" aria-hidden="true">
+    <span class="k-divider__rule"></span>
+    <svg viewBox="0 0 64 96" width="34" height="50" fill="none" stroke="#C2A05C" stroke-width="1.4">
+      <path d="M32 4 Q35 10 32 16 Q29 10 32 4Z" fill="#F4D77A" stroke="none"/>
+      <path d="M14 22 Q32 16 50 22 L46 32 Q32 26 18 32 Z"/>
+      <line x1="32" y1="32" x2="32" y2="62"/>
+      <ellipse cx="32" cy="64" rx="14" ry="4"/>
+      <ellipse cx="32" cy="76" rx="22" ry="6"/>
+      <ellipse cx="32" cy="86" rx="26" ry="6"/>
+    </svg>
+    <span class="k-divider__rule"></span>
+  </div>
+
+  <!-- ============================ EXPERIENCE ============================ -->
+  <section class="k-section" id="experience">
+    <div class="k-container">
+      <header class="k-head">
+        <span class="k-kicker">~ Experience · 02</span>
+        <h2 class="k-title">A short, <em>focused</em> trail.</h2>
+        <p class="k-lede">
+          Hands deep in product code - shipping features, learning
+          systems, and treating each commit as a design decision.
+        </p>
+      </header>
+
+      <ol class="k-timeline">
+        <li class="k-timeline__item">
+          <div class="k-timeline__dot"></div>
+          <div class="k-timeline__body">
+            <div class="k-timeline__row">
+              <h3 class="k-timeline__role">Software Developer</h3>
+              <span class="k-timeline__date">Nov 2025 - Mar 2026</span>
+            </div>
+            <p class="k-timeline__company">Mitsogo Inc</p>
+            <p class="k-timeline__note">
+              Shipped production features end-to-end across the web stack -
+              built reusable React components, integrated REST APIs, and
+              improved frontend performance and reliability through tighter
+              test coverage and code reviews.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <footer class="k-footer" id="contact">
+    <div class="k-container">
+      <div class="k-footer__big">
+        <span class="k-kicker">~ Get in touch · 03</span>
+        <h2 class="k-footer__heading">
+          Let's make<br />
+          <em>something considered.</em>
+        </h2>
+        <button type="button" class="k-email" data-email="nandhaarya66@gmail.com" aria-label="Copy email address">
+          <span class="k-email__text">Email ID : nandhaarya66@gmail.com</span>
+          <span class="k-email__icon">
+            <svg class="k-email__copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="11" height="11" rx="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <svg class="k-email__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="k-footer__rule"></div>
+
+      <div class="k-footer__grid">
+        <div class="k-footer__col">
+          <span class="k-footer__label">Elsewhere</span>
+          <ul class="k-footer__links">
+            <li><a href="https://www.linkedin.com/in/aryanandha-kp-83b658268/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a></li>
+            <li><a href="https://www.behance.net/aryanandha6" target="_blank" rel="noopener">Behance <span>↗</span></a></li>
+            <li><a href="https://drive.google.com/file/d/1Gx09ZeltvKSBruHtq61AyufzrmKYx_Gb/view?usp=sharing" target="_blank" rel="noopener">Resume <span>↗</span></a></li>
+          </ul>
+        </div>
+        <div class="k-footer__col">
+          <span class="k-footer__label">Index</span>
+          <ul class="k-footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+        <div class="k-footer__col">
+          <span class="k-footer__label">Currently</span>
+          <p class="k-footer__currently">
+            Open to design &amp; engineering collaborations - based in
+            Kerala, India, working remotely.
+          </p>
+        </div>
+      </div>
+
+      <!-- snake-boat row along the bottom -->
+      <div class="k-footer__boats" aria-hidden="true">
+        <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+          <g fill="#1F3B2D" opacity="0.85">
+            <path d="M40 50 Q 80 30 140 28 L 280 28 Q 340 30 380 50 Q 220 64 40 50 Z"/>
+            <path d="M480 50 Q 520 30 580 28 L 720 28 Q 780 30 820 50 Q 660 64 480 50 Z"/>
+            <path d="M920 50 Q 960 30 1020 28 L 1160 28 Q 1180 30 1190 50 Q 1060 64 920 50 Z"/>
+          </g>
+          <g stroke="#C2A05C" stroke-width="1" opacity="0.8" fill="none">
+            <line x1="80"  y1="26" x2="76"  y2="14"/>
+            <line x1="120" y1="26" x2="116" y2="14"/>
+            <line x1="160" y1="26" x2="156" y2="14"/>
+            <line x1="200" y1="26" x2="196" y2="14"/>
+            <line x1="240" y1="26" x2="236" y2="14"/>
+            <line x1="520" y1="26" x2="516" y2="14"/>
+            <line x1="560" y1="26" x2="556" y2="14"/>
+            <line x1="600" y1="26" x2="596" y2="14"/>
+            <line x1="640" y1="26" x2="636" y2="14"/>
+            <line x1="680" y1="26" x2="676" y2="14"/>
+            <line x1="960"  y1="26" x2="956"  y2="14"/>
+            <line x1="1000" y1="26" x2="996"  y2="14"/>
+            <line x1="1040" y1="26" x2="1036" y2="14"/>
+            <line x1="1080" y1="26" x2="1076" y2="14"/>
+            <line x1="1120" y1="26" x2="1116" y2="14"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="k-footer__bottom">
+        <span>© 2026 Aryanandha</span>
+        <span>Designed &amp; built by me. <em>· From God's Own Country</em></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="kerala.js"></script>
+</body>
+</html>

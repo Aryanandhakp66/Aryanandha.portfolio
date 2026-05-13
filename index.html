@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryanandha - Designer & Developer</title>
+  <meta name="description" content="Aryanandha - UI/UX designer and developer. Editorial portfolio of thoughtful, considered digital work." />
+  <meta name="theme-color" content="#F4EFE6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================ NAV ============================ -->
+  <nav class="nav">
+    <a href="#home" class="nav__brand">
+      <span class="nav__brand-mark">A</span>
+      <span class="nav__brand-name">Aryanandha</span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="https://drive.google.com/file/d/1Gx09ZeltvKSBruHtq61AyufzrmKYx_Gb/view?usp=sharing" target="_blank" rel="noopener" class="nav__resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#home" class="nav__avatar" aria-label="Profile photo">
+      <img src="resume_image.jpeg" alt="Aryanandha" />
+    </a>
+  </nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header class="hero" id="home">
+    <div class="hero__sketch" aria-hidden="true"></div>
+    <canvas class="hero__water" aria-hidden="true"></canvas>
+    <span class="hero__edge" aria-hidden="true"></span>
+
+    <!-- floating design tool doodles -->
+    <div class="hero__doodles" aria-hidden="true">
+      <span class="doodle doodle--scissors">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+          <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+          <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+        </svg>
+      </span>
+      <span class="doodle doodle--pen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+          <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+          <path d="M2 2l7.586 7.586"/>
+          <circle cx="11" cy="11" r="2"/>
+        </svg>
+      </span>
+      <span class="doodle doodle--palette">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="13.5" cy="6.5" r=".8"/>
+          <circle cx="17.5" cy="10.5" r=".8"/>
+          <circle cx="8.5" cy="7.5" r=".8"/>
+          <circle cx="6.5" cy="12.5" r=".8"/>
+          <path d="M12 2a10 10 0 0 0 0 20 4 4 0 0 0 0-8 2 2 0 0 1-2-2c0-1.1.9-2 2-2h2a6 6 0 0 0 6-6c0-2.21-4.48-4-10-4z"/>
+        </svg>
+      </span>
+      <span class="doodle doodle--ruler">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 17l6 6 14-14-6-6L3 17z"/>
+          <path d="M7.5 12.5l2 2M10 10l3 3M12.5 7.5l2 2M15 5l3 3"/>
+        </svg>
+      </span>
+      <span class="doodle doodle--star">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.6 2.4 7.4L12 16.8 5.8 21.4l2.4-7.4L2 9.4h7.6L12 2z"/>
+        </svg>
+      </span>
+      <span class="doodle doodle--paperclip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+        </svg>
+      </span>
+      <span class="doodle doodle--bracketL">{</span>
+      <span class="doodle doodle--bracketR">}</span>
+    </div>
+
+    <div class="hero__inner">
+      <span class="hero__halo" aria-hidden="true"></span>
+
+      <p class="hero__intro">
+        <span class="hero__intro-dot" aria-hidden="true"></span>
+        <span>PORTFOLIO OF</span>
+        <span class="hero__intro-dot" aria-hidden="true"></span>
+      </p>
+
+      <h1 class="hero__title">
+        <span class="hero__title-text">Aryanandha</span>
+      </h1>
+
+      <p class="hero__sub">
+        <span class="hero__sub-mark" aria-hidden="true">“</span>
+        Designer who codes, developer who designs - crafting clean,
+        thoughtful, and user-focused digital experiences with creativity
+        and precision.
+        <span class="hero__sub-mark hero__sub-mark--end" aria-hidden="true">”</span>
+      </p>
+
+      <div class="hero__cta">
+        <a href="https://drive.google.com/file/d/1Gx09ZeltvKSBruHtq61AyufzrmKYx_Gb/view?usp=sharing" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+          View Resume
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ============================ WORK ============================ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">- Selected work · 01</span>
+        <h2 class="section-title">A single, considered <em>case study.</em></h2>
+        <p class="section-lede">
+          One project, told slowly. The kind of work that asks for
+          patience and rewards a careful read.
+        </p>
+      </div>
+
+      <a href="case-study.html" class="feature feature--spotlight">
+        <span class="feature__chip" aria-hidden="true">
+          <span class="feature__chip-dot"></span>
+          Featured · Case study
+        </span>
+
+        <div class="feature__cover">
+          <img src="coverpage.png" alt="DigiYatra redesign cover" />
+          <span class="feature__year">2025</span>
+          <span class="feature__viewmark">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            View
+          </span>
+        </div>
+
+        <div class="feature__meta">
+          <div class="feature__row">
+            <span class="feature__num">01 / 01</span>
+            <span class="feature__tag">UI/UX · Mobile</span>
+          </div>
+          <h3 class="feature__title">DigiYatra, <em>Reimagined.</em></h3>
+          <p class="feature__desc">
+            A research-led redesign of India's facial-recognition
+            airport boarding flow - built around glanceability and
+            the calm of knowing exactly when your flight leaves.
+          </p>
+
+          <ul class="feature__chips">
+            <li>Glanceability</li>
+            <li>Hierarchy</li>
+            <li>Calm UI</li>
+          </ul>
+
+          <span class="feature__cta">
+            View case study
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================ EXPERIENCE ============================ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">- Experience · 02</span>
+        <h2 class="section-title">A short, <em>focused</em> trail.</h2>
+        <p class="section-lede">
+          Hands deep in product code - shipping features, learning
+          systems, and treating each commit as a design decision.
+        </p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__body">
+            <div class="timeline__row">
+              <h3 class="timeline__role">Software Developer</h3>
+              <span class="timeline__date">Nov 2025 - Mar 2026</span>
+            </div>
+            <p class="timeline__company">Mitsogo Inc</p>
+            <p class="timeline__note">
+              Shipped production features end-to-end across the web stack -
+              built reusable React components, integrated REST APIs, and
+              improved frontend performance and reliability through tighter
+              test coverage and code reviews.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT / FOOTER ============================ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+
+      <div class="footer__big">
+        <span class="kicker">- Get in touch · 03</span>
+        <h2 class="footer__heading">
+          Let's make<br />
+          <em>something considered.</em>
+        </h2>
+        <button type="button" class="email-pill" data-email="nandhaarya66@gmail.com" aria-label="Copy email address">
+          <span class="email-pill__text">Email ID : nandhaarya66@gmail.com</span>
+          <span class="email-pill__icon" aria-hidden="true">
+            <svg class="email-pill__copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="11" height="11" rx="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <svg class="email-pill__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="footer__rule"></div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <span class="footer__label">Elsewhere</span>
+          <ul class="footer__links">
+            <li>
+              <a href="https://www.linkedin.com/in/aryanandha-kp-83b658268/" target="_blank" rel="noopener">
+                LinkedIn <span>↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/aryanandha6" target="_blank" rel="noopener">
+                Behance <span>↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1Gx09ZeltvKSBruHtq61AyufzrmKYx_Gb/view?usp=sharing" target="_blank" rel="noopener">
+                Resume <span>↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <span class="footer__label">Index</span>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--meta">
+          <span class="footer__label">Currently</span>
+          <p class="footer__currently">
+            Open to design &amp; engineering collaborations - based in India,
+            working remotely.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Aryanandha</span>
+        <span class="footer__sig">Designed &amp; built by me.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

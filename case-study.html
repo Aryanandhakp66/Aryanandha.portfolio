@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiYatra - One-Glance Boarding · Case Study by Aryanandha K P</title>
+  <meta name="description" content="A single-screen redesign of the DigiYatra boarding-pass surface - rebuilt around glanceability, hierarchy, and calm composition." />
+  <meta name="theme-color" content="#F4EFE6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="cs-web">
+
+  <!-- ============================ TOP NAV ============================ -->
+  <nav class="cw-nav">
+    <a href="index.html" class="cw-nav__back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back
+    </a>
+    <span class="cw-nav__crumb"><em>Case study</em> · 01 / 01</span>
+  </nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header class="cw-hero">
+    <div class="cw-hero__decor" aria-hidden="true">
+      <span class="cw-hero__blob"></span>
+      <span class="cw-hero__grid"></span>
+    </div>
+
+    <div class="cw-hero__inner">
+      <span class="cw-hero__kicker">- Selected work · 2025 · Single-screen redesign</span>
+
+      <h1 class="cw-hero__title">
+        DigiYatra,<br /><em>in one glance.</em>
+      </h1>
+
+      <p class="cw-hero__lede">
+        A surgical redesign of the boarding-pass surface used by millions
+        of Indian air travellers - rebuilt around glanceability, hierarchy,
+        and the calm of knowing exactly when your flight leaves.
+      </p>
+
+      <div class="cw-hero__byline">
+        <span class="cw-hero__byline-label">A case study by</span>
+        <span class="cw-hero__author">Aryanandha&nbsp;K&nbsp;P</span>
+        <span class="cw-hero__byline-role">UI / UX Designer</span>
+      </div>
+
+      <div class="cw-hero__pills">
+        <span class="cw-pill">Glanceability</span>
+        <span class="cw-pill">Hierarchy</span>
+        <span class="cw-pill">Calm UI</span>
+      </div>
+    </div>
+
+    <div class="cw-hero__cover">
+      <img src="coverpage.png" alt="DigiYatra redesign - boarding pass concept" />
+      <span class="cw-hero__tag">Fig. 00 · Final boarding surface</span>
+    </div>
+
+    <div class="cw-hero__strip">
+      <div><span>Platform</span><span>Mobile · iOS &amp; Android</span></div>
+      <div><span>Scope</span><span>Home / boarding-pass screen</span></div>
+      <div><span>Year</span><span>2025</span></div>
+      <div><span>Tools</span><span>Figma · Notion</span></div>
+    </div>
+  </header>
+
+  <!-- ============================ OVERVIEW ============================ -->
+  <section class="cw-section">
+    <div class="cw-grid">
+      <span class="cw-grid__label">01 - Overview</span>
+      <div class="cw-grid__body">
+        <h2 class="cw-h2">A national app, <em>one missing detail.</em></h2>
+        <p class="cw-p">
+          DigiYatra is the paperless airport experience used by millions
+          across India. The technology works. The home screen, however,
+          buries the single most important detail of any travel day -
+          <em>the flight time</em> - forcing travellers back to email,
+          WhatsApp, or a paper printout to confirm what the app was meant
+          to surface.
+        </p>
+        <p class="cw-p">
+          This redesign rebuilds the boarding-pass surface around one
+          principle: critical information should be readable in under one
+          second - the time it takes to glance at a wristwatch.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ THE SPARK ============================ -->
+  <section class="cw-section">
+    <div class="cw-grid">
+      <span class="cw-grid__label">02 - The spark</span>
+      <div class="cw-grid__body">
+        <h2 class="cw-h2">A real complaint, from <em>a real traveller.</em></h2>
+        <p class="cw-p">
+          A LinkedIn post from a frequent flyer - published months after
+          the app's national rollout - captured the exact friction the
+          product was meant to remove. It was a single sentence, but it
+          named the problem precisely.
+        </p>
+      </div>
+    </div>
+
+    <figure class="cw-spark cw-spark--withimg">
+      <div class="cw-spark__media">
+        <img src="Screenshot%202026-05-09%20152741.png" alt="LinkedIn post by Sanandan Sudhir - the complaint that sparked the redesign" />
+      </div>
+      <div class="cw-spark__body">
+        <blockquote class="cw-spark__quote">
+          <span class="cw-spark__mark">"</span>
+          But here's the catch - it doesn't show you the
+          <em>flight time.</em>
+        </blockquote>
+        <figcaption class="cw-spark__cite">
+          <span class="cw-spark__dot"></span>
+          Sanandan Sudhir · LinkedIn · 8 months ago
+        </figcaption>
+      </div>
+    </figure>
+  </section>
+
+  <!-- ============================ THE PROBLEM ============================ -->
+  <section class="cw-section">
+    <div class="cw-grid">
+      <span class="cw-grid__label">03 - What users struggle with</span>
+      <div class="cw-grid__body">
+        <h2 class="cw-h2">Three frictions, one <em>flat hierarchy.</em></h2>
+        <p class="cw-p">
+          Each of these breaks down the trust users have in the app at the
+          most stressful moment of their day - minutes before boarding.
+        </p>
+      </div>
+    </div>
+
+    <ul class="cw-bullets">
+      <li>
+        <span class="cw-bullets__num">01 - Visibility</span>
+        <h4>Flight timing not visible</h4>
+        <p>The most important data point - boarding and departure time - is buried or missing entirely from the home view.</p>
+      </li>
+      <li>
+        <span class="cw-bullets__num">02 - Context-switching</span>
+        <h4>Forced to leave the app</h4>
+        <p>Users open WhatsApp, Gmail, or a paper copy to find the time they expected DigiYatra to surface.</p>
+      </li>
+      <li>
+        <span class="cw-bullets__num">03 - Hierarchy</span>
+        <h4>Everything looks equally important</h4>
+        <p>Seat, gate, PNR and flight number are listed without any hierarchy - every element competes for the same attention.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============================ DESIGN GOALS ============================ -->
+  <section class="cw-section">
+    <div class="cw-grid">
+      <span class="cw-grid__label">04 - Design goals</span>
+      <div class="cw-grid__body">
+        <h2 class="cw-h2">Two goals. Each design decision had to <em>defend itself.</em></h2>
+        <p class="cw-p">
+          Before opening Figma, a small, opinionated set of goals. No
+          ambiguity, no scope creep - every pixel had to answer to this
+          list.
+        </p>
+      </div>
+    </div>
+
+    <div class="cw-goals">
+      <article class="cw-goal">
+        <span class="cw-goal__num">Goal 01</span>
+        <h3 class="cw-goal__title">Improve <em>glanceability.</em></h3>
+        <p class="cw-goal__copy">
+          Critical info readable in under one second - the time it takes
+          to glance at a wristwatch.
+        </p>
+      </article>
+      <article class="cw-goal">
+        <span class="cw-goal__num">Goal 02</span>
+        <h3 class="cw-goal__title">Surface critical info <em>instantly.</em></h3>
+        <p class="cw-goal__copy">
+          Time, route, and gate above the fold. No taps, no scrolls,
+          no guesswork.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ BEFORE / AFTER ============================ -->
+  <section class="cw-section">
+    <div class="cw-grid">
+      <span class="cw-grid__label">05 - Before / After</span>
+      <div class="cw-grid__body">
+        <h2 class="cw-h2">Same data. <em>Different decision.</em></h2>
+        <p class="cw-p">
+          The redesign doesn't add or remove information - it re-ranks it.
+          Time leads. Everything else falls in line behind it.
+        </p>
+      </div>
+    </div>
+
+    <div class="cw-compare">
+      <figure class="cw-compare__col">
+        <span class="cw-compare__label">Before</span>
+        <div class="cw-compare__frame cw-compare__frame--img">
+          <img src="digi%20current.png" alt="Current DigiYatra home" />
+        </div>
+      </figure>
+
+      <figure class="cw-compare__col">
+        <span class="cw-compare__label">After</span>
+        <div class="cw-compare__frame cw-compare__frame--img">
+          <img src="digi%20redesign.png" alt="Redesigned boarding pass" />
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================ FINAL DESIGN ============================ -->
+  <section class="cw-section">
+    <div class="cw-final">
+      <h3 class="cw-final__title">Final Design</h3>
+
+      <div class="cw-final__stage">
+        <svg class="cw-final__lines" viewBox="0 0 1100 600" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <marker id="cwArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#9B968C"/>
+            </marker>
+          </defs>
+          <line x1="880" y1="78" x2="690" y2="78" stroke="#9B968C" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#cwArrow)"/>
+          <line x1="220" y1="190" x2="410" y2="190" stroke="#9B968C" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#cwArrow)"/>
+          <line x1="880" y1="295" x2="690" y2="295" stroke="#9B968C" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#cwArrow)"/>
+          <line x1="220" y1="385" x2="410" y2="385" stroke="#9B968C" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#cwArrow)"/>
+        </svg>
+
+        <div class="cw-final__phone">
+          <img src="digi%20redesign.png" alt="Final design - DigiYatra boarding pass" />
+        </div>
+
+        <article class="cw-final__card cw-final__card--tr">
+          <h4>Dark Surface</h4>
+          <p>Deep navy reduces glare under harsh airport lighting.</p>
+        </article>
+
+        <article class="cw-final__card cw-final__card--ml">
+          <h4>Route visibility</h4>
+          <p>BLR &rarr; BOM rendered as hero typography. The first thing the eye lands on.</p>
+        </article>
+
+        <article class="cw-final__card cw-final__card--mr">
+          <h4>QR Accessibility</h4>
+          <p>Boarding QR sits on the pass &mdash; one tap less between traveler and gate.</p>
+        </article>
+
+        <article class="cw-final__card cw-final__card--bl">
+          <h4>Boarding Details</h4>
+          <p>Boarding &middot; Gate &middot; Zone &middot; Seat in a single, scannable strip.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ METRIC CALLOUT ============================ -->
+  <section class="cw-metric">
+    <span class="cw-metric__label">- Outcome</span>
+    <div class="cw-metric__row">
+      <div class="cw-metric__cell">
+        <span class="cw-metric__value">~6<small>s</small></span>
+        <span class="cw-metric__caption">Before - average time to find boarding</span>
+      </div>
+      <span class="cw-metric__arrow">→</span>
+      <div class="cw-metric__cell cw-metric__cell--hero">
+        <span class="cw-metric__value">&lt;1<small>s</small></span>
+        <span class="cw-metric__caption">After - one glance, no taps</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PULL QUOTE ============================ -->
+  <blockquote class="cw-quote">
+    <span class="cw-quote__mark">"</span>
+    Good UX is about making important information<br />
+    <em>instantly accessible.</em>
+  </blockquote>
+
+  <!-- ============================ END ============================ -->
+  <section class="cw-end">
+    <span class="cw-end__label">- End of case study</span>
+    <h3 class="cw-end__title">
+      Like what you read?
+    </h3>
+    <div class="cw-end__row">
+      <a href="mailto:nandhaarya66@gmail.com" class="cw-cta cw-cta--primary">
+        Get in touch
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="index.html" class="cw-cta cw-cta--ghost">← Back to portfolio</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
