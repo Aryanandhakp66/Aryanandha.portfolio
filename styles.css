@@ -3467,3 +3467,143 @@ body.cs-web {
 
   .cw-hero__tag { left: 10px; bottom: 10px; }
 }
+
+/* =====================================================
+   WORK - multi-feature stack + Zyra spotlight
+   ===================================================== */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* Zyra card - composed phone cover on a maroon/blush stage */
+.feature__cover--zyra {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  padding: 32px 22px;
+  background:
+    radial-gradient(80% 90% at 50% 0%, rgba(251,238,238,0.95) 0%, transparent 65%),
+    radial-gradient(60% 70% at 88% 100%, rgba(201,138,138,0.55) 0%, transparent 65%),
+    linear-gradient(160deg, #FBEEEE 0%, #F4DADA 55%, #EAC8C8 100%);
+  perspective: none;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* soft concentric ring - decorative */
+.feature__cover--zyra::after {
+  content: '';
+  position: absolute;
+  width: 78%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(122,62,62,0.15);
+  border-radius: 50%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.zyra-mock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.zyra-phone {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 22px;
+  background: linear-gradient(150deg, #1a0e0e, #0a0505 60%, #000);
+  padding: 4px;
+  box-shadow:
+    0 24px 50px -16px rgba(122, 62, 62, 0.42),
+    0 8px 24px -10px rgba(0, 0, 0, 0.22);
+  transition: transform 0.7s var(--ease);
+  overflow: hidden;
+}
+.zyra-phone__notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32%;
+  height: 7px;
+  border-radius: 999px;
+  background: #000;
+  z-index: 3;
+}
+
+/* override the global .feature__cover img rules so the phone screens render correctly */
+.feature__cover--zyra .zyra-phone img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border-radius: 18px;
+  object-fit: cover;
+  animation: none;
+  transform: none;
+  filter: contrast(1.02);
+  transition: none;
+}
+.feature--zyra:hover .feature__cover--zyra .zyra-phone img {
+  transform: none;
+  filter: contrast(1.04);
+}
+
+.zyra-phone--center {
+  z-index: 3;
+  width: 34%;
+  transform: translateY(-2px);
+}
+.zyra-phone--left {
+  z-index: 2;
+  transform: translate(-78%, 14px) rotate(-9deg) scale(0.92);
+  opacity: 0.96;
+}
+.zyra-phone--right {
+  z-index: 2;
+  transform: translate(78%, 14px) rotate(9deg) scale(0.92);
+  opacity: 0.96;
+}
+
+/* hover - splay the phones gently */
+.feature--zyra:hover .zyra-phone--center { transform: translateY(-10px) scale(1.04); }
+.feature--zyra:hover .zyra-phone--left   { transform: translate(-90%, 10px) rotate(-12deg) scale(0.92); }
+.feature--zyra:hover .zyra-phone--right  { transform: translate( 90%, 10px) rotate( 12deg) scale(0.92); }
+
+/* brand-toned chip dot for Zyra */
+.feature--zyra .feature__chip-dot {
+  background: #7A3E3E;
+  box-shadow: 0 0 0 4px rgba(122, 62, 62, 0.18);
+}
+
+/* tag pill keeps the warm tone */
+.feature--zyra .feature__year {
+  color: #5C2D2D;
+  border-color: rgba(122,62,62,0.22);
+}
+
+@media (max-width: 920px) {
+  .features { gap: 36px; }
+  .feature__cover--zyra { aspect-ratio: 5 / 4; padding: 22px 12px; }
+  .zyra-phone { width: 32%; }
+  .zyra-phone--center { width: 36%; }
+  .zyra-phone--left  { transform: translate(-72%, 10px) rotate(-9deg) scale(0.9); }
+  .zyra-phone--right { transform: translate( 72%, 10px) rotate( 9deg) scale(0.9); }
+  .feature--zyra:hover .zyra-phone--left  { transform: translate(-80%, 6px) rotate(-12deg) scale(0.9); }
+  .feature--zyra:hover .zyra-phone--right { transform: translate( 80%, 6px) rotate( 12deg) scale(0.9); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zyra-phone { transition: none; }
+}
