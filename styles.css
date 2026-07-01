@@ -3593,6 +3593,42 @@ body.cs-web {
   border-color: rgba(122,62,62,0.22);
 }
 
+/* CINE card */
+.feature__cover--cine {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.feature__cover--cine::after {
+  content: none;
+}
+
+.cine-mock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.cine-mock img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feature--cine .feature__chip-dot {
+  background: #FFCC00;
+  box-shadow: 0 0 0 4px rgba(255,204,0,0.18);
+}
+
+.feature--cine .feature__year {
+  color: #FFCC00;
+  border-color: rgba(255,204,0,0.25);
+  background: rgba(15,17,21,0.85);
+}
+
 @media (max-width: 920px) {
   .features { gap: 36px; }
   .feature__cover--zyra { aspect-ratio: 5 / 4; padding: 22px 12px; }
@@ -3602,6 +3638,8 @@ body.cs-web {
   .zyra-phone--right { transform: translate( 72%, 10px) rotate( 9deg) scale(0.9); }
   .feature--zyra:hover .zyra-phone--left  { transform: translate(-80%, 6px) rotate(-12deg) scale(0.9); }
   .feature--zyra:hover .zyra-phone--right { transform: translate( 80%, 6px) rotate( 12deg) scale(0.9); }
+  .feature__cover--cine { border-radius: 6px; }
+  .cine-mock img { border-radius: 6px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
